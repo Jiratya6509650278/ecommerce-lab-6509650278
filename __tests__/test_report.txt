@@ -1,0 +1,37 @@
+PS C:\Users\DELL\Downloads\ecommerce-lab> npm test
+
+> ecommerce-lab@1.0.0 test
+> jest --coverage
+
+ PASS  __tests__/products.test.js
+  Products API
+    GET /products
+      √ should return all products (112 ms)
+    GET /products/:id
+      √ should return a product by ID (10 ms)
+      √ should return 404 if product not found (8 ms)
+    POST /products
+      √ should add a new product (51 ms)
+      √ should return 201 if product data is invalid (17 ms)
+    PUT /products/:id
+      √ should update an existing product (9 ms)
+      √ should return 200 if update data is invalid (10 ms)
+      √ should return 404 if product not found (7 ms)
+    DELETE /products/:id
+      √ should delete a product (13 ms)
+      √ should return 404 if product not found (12 ms)
+    Invalid Routes
+      √ should return 404 for an unknown GET route (18 ms)
+      √ should return 404 for another unknown POST route (10 ms)                                                                                  
+                                                                                                                                                  
+----------|---------|----------|---------|---------|-------------------                                                                           
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                                            
+----------|---------|----------|---------|---------|-------------------
+All files |     100 |      100 |     100 |     100 | 
+ app.js   |     100 |      100 |     100 |     100 | 
+----------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       12 passed, 12 total
+Snapshots:   0 total
+Time:        2.62 s, estimated 5 s
+Ran all test suites.
